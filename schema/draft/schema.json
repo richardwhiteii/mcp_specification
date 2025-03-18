@@ -1284,6 +1284,10 @@
                 },
                 "params": {
                     "properties": {
+                        "message": {
+                            "description": "An optional message describing the current progress.",
+                            "type": "string"
+                        },
                         "progress": {
                             "description": "The progress thus far. This should increase every time progress is made, even if the total is unknown.",
                             "type": "number"
@@ -1920,7 +1924,7 @@
                     "properties": {
                         "level": {
                             "$ref": "#/definitions/LoggingLevel",
-                            "description": "The level of logging that the client wants to receive from the server. The server should send all logs at this level and higher (i.e., more severe) to the client as notifications/logging/message."
+                            "description": "The level of logging that the client wants to receive from the server. The server should send all logs at this level and higher (i.e., more severe) to the client as notifications/message."
                         }
                     },
                     "required": [
